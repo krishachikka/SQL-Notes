@@ -23,7 +23,7 @@ A clean collection of SQL notes, organized for quick learning and revision. Cove
 - [Clauses](./clauses.md)  
   Using `WHERE`, `ORDER BY`, `GROUP BY`, `HAVING`, and `LIMIT`.
 
-- [Joins](./joins.md)  
+- [Joins](./join.md)  
   `INNER`, `LEFT`, `RIGHT`, `FULL`, and `CROSS JOIN` explained with examples.
 
 - [Aggregate Functions](./aggregate.md)  
