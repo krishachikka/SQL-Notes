@@ -189,3 +189,6 @@ GROUP BY Dept;
 SELECT * FROM Student;
 ```
 <img width="354" height="208" alt="image" src="https://github.com/user-attachments/assets/28e585f8-a603-41c9-b0ce-3161dc8be361" />
+
+---
+[← Transactions](./transactions.md) | [Back to Home](./README.md)
