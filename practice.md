@@ -54,6 +54,7 @@ UPDATE Student SET Marks = '85' WHERE Name = 'Dev Sharma';
 UPDATE Student SET Dept = 'IT';
 ```
 <img width="337" height="217" alt="image" src="https://github.com/user-attachments/assets/961d2f42-bccf-48d3-9711-c6cf0a04e2bd" />
+
 ```sql
 UPDATE Student SET Dept = 'CS' WHERE Marks >= 80;
 UPDATE Student SET Dept = 'Comps' WHERE Name = 'Krisha';
