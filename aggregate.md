@@ -62,8 +62,25 @@ GROUP BY city;
 
 ---
 
+## Sorting Results (ASC / DESC)
+
+You can sort aggregated results using `ORDER BY`.
+
+```sql
+SELECT city, COUNT(*) AS total_students
+FROM students
+GROUP BY city
+ORDER BY total_students DESC;
+```
+
+* `ASC` – Sorts in ascending order (default)
+* `DESC` – Sorts in descending order
+
+---
+
 ## Notes
 
 * Use `AS` to rename result columns (`AS total_students`)
 * Can use multiple aggregate functions in one query
 * `NULL` values are ignored in calculations (except for `COUNT(*)`)
+* Combine `GROUP BY` with `ORDER BY` to control output order
