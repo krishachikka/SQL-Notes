@@ -1,7 +1,7 @@
 # SQL revision prep Notes 🐙
 
 A clean collection of SQL notes, organized for quick learning and revision. Covers the basics of SQL, syntax, commands, and key concepts used in real-world applications.
-- Reference Book - ['DATABASE SYSTEM CONCEPTS 6th Edition' by Abraham Silberschatz , Henry F. Korth , S. Sudarshan](a.co/d/ckCZV0v)
+- Reference Book - [*DATABASE SYSTEM CONCEPTS 6th Edition* by Abraham Silberschatz, Henry F. Korth, S. Sudarshan](https://a.co/d/ckCZV0v)
 
 ## Table of Contents
 
