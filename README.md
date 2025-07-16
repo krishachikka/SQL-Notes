@@ -48,9 +48,5 @@ A clean collection of SQL notes, organized for quick learning and revision. Cove
   Stored Procedures, Functions, Triggers, and Normalization.
 
 ---
-[← Transactions](./transactions.md) | [Back to Home](./README.md)
-
----
-
 Created and maintained by [Krisha Chikka](https://github.com/krishachikka) as part of a personal learning prep :)  
 Feel free to fork, star, or contribute! <3
