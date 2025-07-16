@@ -5,21 +5,19 @@ A clean and beginner-friendly collection of SQL notes, organized for quick learn
 ## Table of Contents
 
 - [Introduction](./Intro.md)  
-  Overview of SQL, what it does, and why it matters.
+  Overview of SQL, what it does, and why it matters.<br/>
   Brief on relational, NoSQL, and other database types.
 
 - [SQL Syntax](./Syntax.md)  
-  General structure of SQL statements and formatting rules.
+  General structure of SQL statements and formatting rules.<br/>
   Common SQL data types used in different databases.
 
 - [SQL Statements](./Statements.md)  
-  Rules like `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, etc.
+  Rules like `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, etc.<br/>
   Core commands: `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
 
-- [Tables](./tables.md)  
-  Creating tables, table-level constraints, foreign keys.
-
-- [Modifying Tables](./table-modify.md)  
+- [Tables](./table.md)  
+  Creating tables, table-level constraints, foreign keys.<br/>
   Using `ALTER`, `DROP`, `TRUNCATE` to modify or delete tables.
 
 - [Clauses](./clauses.md)  
@@ -28,7 +26,7 @@ A clean and beginner-friendly collection of SQL notes, organized for quick learn
 - [Joins](./joins.md)  
   `INNER`, `LEFT`, `RIGHT`, `FULL`, and `CROSS JOIN` explained with examples.
 
-- [Aggregate Functions](./aggregates.md)  
+- [Aggregate Functions](./aggregate.md)  
   Functions like `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
 
 - [Subqueries](./subqueries.md)  
@@ -48,5 +46,5 @@ A clean and beginner-friendly collection of SQL notes, organized for quick learn
 
 ---
 
-Created and maintained by [Krisha Chikka](https://github.com/krishachikka) as part of a personal learning project.  
-Feel free to fork, star, or contribute!
+Created and maintained by [Krisha Chikka](https://github.com/krishachikka) as part of a personal learning prep :)  
+Feel free to fork, star, or contribute! <3
