@@ -1,73 +1,137 @@
-# Modifying and Deleting Tables in SQL
+# SQL Clauses
 
-Once a table is created, you can modify or delete it using the following commands:
+Clauses are used in SQL to filter, sort, group, and control query output. They are often combined with `SELECT` statements.
 
 ---
 
-## 1. ALTER TABLE
+## 1. WHERE
 
-Used to **change the structure** of an existing table.
+Filters rows based on a condition.
 
-### Add a New Column
 ```sql
-ALTER TABLE students
-ADD email VARCHAR(100);
+SELECT * FROM students
+WHERE age >= 18;
 ````
 
-### Modify an Existing Column
+Supports logical operators: `AND`, `OR`, `NOT`, comparison operators: `=`, `!=`, `<`, `>`, `BETWEEN`, `LIKE`, `IN`
+
+---
+
+## 2. ORDER BY
+
+Sorts the result in ascending (default) or descending order.
 
 ```sql
-ALTER TABLE students
-MODIFY age INT NOT NULL;
-```
-
-### Rename a Column (syntax may vary)
-
-```sql
-ALTER TABLE students
-RENAME COLUMN city TO hometown;
-```
-
-### Drop a Column
-
-```sql
-ALTER TABLE students
-DROP COLUMN email;
+SELECT name, age FROM students
+ORDER BY age DESC;
 ```
 
 ---
 
-## 2. DROP TABLE
+## 3. GROUP BY
 
-Used to **permanently delete** the entire table and all its data.
-
-```sql
-DROP TABLE students;
-```
-
-> Warning: This action is irreversible. The table and its data are gone for good.
-
----
-
-## 3. TRUNCATE TABLE
-
-Used to **delete all rows** from a table, but keep the structure intact.
+Groups rows with the same value in specified column(s). Often used with aggregate functions.
 
 ```sql
-TRUNCATE TABLE students;
+SELECT city, COUNT(*) FROM students
+GROUP BY city;
 ```
 
-> Faster than `DELETE` without `WHERE`, but cannot be rolled back in most databases.
+---
+
+## 4. HAVING
+
+Filters grouped data. Used **after** `GROUP BY`.
+
+```sql
+SELECT city, COUNT(*) FROM students
+GROUP BY city
+HAVING COUNT(*) > 2;
+```
 
 ---
 
-## Summary
+## 5. LIMIT / TOP / FETCH
 
-| Command  | What it does                | Reversible? |
-| -------- | --------------------------- | ----------- |
-| ALTER    | Modify table structure      | Yes         |
-| DROP     | Delete table and data       | No          |
-| TRUNCATE | Delete all rows, keep table | Usually No  |
+Used to restrict the number of rows returned.
+
+### MySQL / PostgreSQL
+
+```sql
+SELECT * FROM students
+LIMIT 5;
+```
+
+### SQL Server
+
+```sql
+SELECT TOP 5 * FROM students;
+```
 
 ---
-[← Tables](./table.md) | [Next → Joins](./join.md)
+
+## Notes
+
+* `WHERE` filters **before** grouping
+* `HAVING` filters **after** grouping
+* `ORDER BY` always comes **last**
+
+---
+
+## Clause Order in a Query (Standard Flow)
+
+```sql
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+```
+
+Perfect question. SQL wildcards (`LIKE`, `%`, `_`, etc.) deserve their own spotlight but also belong where users learn about filtering.
+
+---
+
+## SQL Wildcards (with LIKE)
+
+Wildcards are special characters used with the `LIKE` operator in the `WHERE` clause to search for patterns in text.
+
+### Common Wildcards
+
+| Symbol | Description                                | Example Match                     |
+|--------|--------------------------------------------|-----------------------------------|
+| `%`    | Matches any sequence of characters         | `'A%'` → matches "Alice", "Aarav" |
+| `_`    | Matches any single character               | `'A_a'` → matches "Ana", "Aba"    |
+| `[abc]`| Matches any one character inside brackets   | `'R[ae]m'` → matches "Ram", "Rem" |
+| `[^abc]`| Matches any one character *not* listed     | `'K[^ae]n'` → matches "Kin", not "Ken" |
+| `[a-z]`| Matches any character in the range          | `'S[a-z]m'` → matches "Sam", "Sim"|
+
+> Note: Some wildcard patterns like `[]` and `[^]` are only supported in certain databases like SQL Server. Stick to `%` and `_` for cross-platform usage.
+
+### Examples
+
+```sql
+-- Names that start with 'A'
+SELECT * FROM Student WHERE Name LIKE 'A%';
+
+-- Names that end with 'n'
+SELECT * FROM Student WHERE Name LIKE '%n';
+
+-- Names with 'a' as second character
+SELECT * FROM Student WHERE Name LIKE '_a%';
+
+-- Names exactly 4 characters long
+SELECT * FROM Student WHERE Name LIKE '____';
+```
+
+Use `NOT LIKE` to exclude patterns:
+
+```sql
+-- Names that don't start with 'K'
+SELECT * FROM Student WHERE Name NOT LIKE 'K%';
+```
+
+---
+[← Tables](./table.md) | [Next → Joins](./joins.md)
