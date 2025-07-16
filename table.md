@@ -133,4 +133,5 @@ TRUNCATE TABLE students;
 | DROP     | Delete table and data       | No          |
 | TRUNCATE | Delete all rows, keep table | Usually No  |
 
-```
+---
+[← SQL Statements](./Statements.md) | [Next → Clauses](./clauses.md)

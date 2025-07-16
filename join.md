@@ -99,4 +99,5 @@ CROSS JOIN enrollments;
 | FULL JOIN  | All from both, matched and unmatched |
 | CROSS JOIN | All combinations (cartesian product) |
 
-```
+---
+[← Clauses](./clauses.md) | [Next → Aggregate Functions](./aggregate.md)

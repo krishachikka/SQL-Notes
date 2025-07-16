@@ -61,3 +61,6 @@ Databases store and organize data. There are several types, depending on how dat
 * Data is stored as objects, like in OOP languages
 * Supports complex data types
 * Example: db4o, ObjectDB
+
+---
+[← Home](./README.md) | [Next → SQL Syntax](./Syntax.md)

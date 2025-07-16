@@ -92,3 +92,6 @@ This works only if the underlying `students` table allows it.
 * Views don’t store data—they just show a live result of a query
 * Useful for abstracting business logic
 * Can help enforce access control by showing only specific columns/rows
+
+---
+[← Subqueries](./subqueries.md) | [Next → Indexes](./indexes.md)

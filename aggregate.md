@@ -84,3 +84,5 @@ ORDER BY total_students DESC;
 * Can use multiple aggregate functions in one query
 * `NULL` values are ignored in calculations (except for `COUNT(*)`)
 * Combine `GROUP BY` with `ORDER BY` to control output order
+---
+[← Joins](./joins.md) | [Next → Subqueries](./subqueries.md)

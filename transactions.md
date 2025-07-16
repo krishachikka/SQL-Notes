@@ -107,3 +107,6 @@ ROLLBACK TO sp1;
 * Use transactions for anything that spans multiple steps or tables
 * Always commit when done, or rollback if something fails
 * Be cautious: forgetting to commit can lock resources
+
+---
+[← Indexes](./indexes.md) | [Next → Practice Questions](./practice.md)

@@ -56,3 +56,6 @@ Data types define the kind of value a column can store. They vary slightly acros
 ### 4. Boolean Type
 
 * `BOOLEAN` or `BOOL` – Stores `TRUE` or `FALSE` values
+
+---
+[← Introduction](./Intro.md) | [Next → SQL Statements](./Statements.md)

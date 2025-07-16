@@ -111,3 +111,6 @@ The subquery references the outer query (`s.id`). It checks if each student is e
 * Must return the correct number of values expected by the outer query
 * Correlated subqueries can be slower—use only when necessary
 * You can replace some subqueries with `JOINs` for better performance
+
+---
+[← Aggregate Functions](./aggregate.md) | [Next → Views](./views.md)

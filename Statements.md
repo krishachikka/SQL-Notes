@@ -189,3 +189,4 @@ WHERE age < 18;
 Same warning here—no `WHERE` clause means **everything** gets deleted.
 
 ---
+[← SQL Syntax](./Syntax.md) | [Next → Tables](./table.md)

@@ -92,3 +92,6 @@ SHOW INDEXES FROM students;
 | Speeds up  | SELECT, JOIN, WHERE, ORDER BY   |
 | Slows down | INSERT, UPDATE, DELETE          |
 | Best for   | Large tables, high-read queries |
+
+---
+[← Views](./views.md) | [Next → Transactions](./transactions.md)
