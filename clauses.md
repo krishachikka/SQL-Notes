@@ -70,4 +70,4 @@ TRUNCATE TABLE students;
 | TRUNCATE | Delete all rows, keep table | Usually No  |
 
 ---
-[← Tables](./table.md) | [Next → Joins](./joins.md)
+[← Tables](./table.md) | [Next → Joins](./join.md)
