@@ -1,6 +1,6 @@
-# SQL Notes
+# SQL revision prep Notes 🐙
 
-A clean and beginner-friendly collection of SQL notes, organized for quick learning and revision. Covers the basics of SQL, syntax, commands, and key concepts used in real-world applications.
+A clean collection of SQL notes, organized for quick learning and revision. Covers the basics of SQL, syntax, commands, and key concepts used in real-world applications.
 
 ## Table of Contents
 
@@ -40,6 +40,9 @@ A clean and beginner-friendly collection of SQL notes, organized for quick learn
 
 - [Transactions](./transactions.md)  
   Using `BEGIN`, `COMMIT`, `ROLLBACK`, and understanding ACID properties.
+
+- [Practice Questions](./practice.md)  
+  A curated list of SQL interview-style queries with answers using the Student table.
 
 - [Advanced Topics](./advanced.md) *(coming soon)*  
   Stored Procedures, Functions, Triggers, and Normalization.
